@@ -1,11 +1,11 @@
 {
-  "name": "EvoPay",
+  "name": "EvoPlay",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/EvoPay/",
+    "build": "vite build --base=/EvoPlay/",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview",
     "predeploy": "npm run build",
