@@ -17,7 +17,7 @@
   align-items: center;
 }
 
-.google-play img {
+.google-play {
   width: 130px;
   margin-top: 0;
   margin-bottom: 32px;
@@ -60,6 +60,10 @@
   width: 100vw;
 }
 
+.google-play-2 {
+  display: none;
+}
+
 .footer-description {
   color: rgb(250, 250, 250);
   font-family: Lilita One;
@@ -70,7 +74,7 @@
   padding: 39px 34px 10px 35px;
   text-align: center;
   margin: 0 auto;
-  max-width: 372px;
+  max-width: 385px;
 }
 
 /* Desktop Styles */
@@ -89,9 +93,9 @@
     max-width: 1200px;
   }
 
-  /* .google-play img {
-    width: 200px;
-  } */
+  .google-play {
+    display: none;
+  }
 
   .footer-links {
     gap: 16px;
@@ -107,15 +111,22 @@
     margin-bottom: 0;
   }
 
-  /* .footer-gradient {
-    d
-  } */
+  .footer-gradient {
+    display: flex;
+    flex-direction: row;
+    gap: 122px;
+  }
+
+  .google-play-2 {
+    display: block;
+    min-width: 195px;
+    margin: 149px 0 79px 112px;
+  }
 
   .footer-description {
     font-size: 32px;
     text-align: left;
-    max-width: 659px;
+    min-width: 684px;
     padding: 128px 112px 64px 0;
-    margin-left: 122px;
   }
 }
