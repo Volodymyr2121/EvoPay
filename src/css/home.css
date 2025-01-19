@@ -66,12 +66,21 @@
 
 .home {
   position: relative;
+  background: linear-gradient(
+    to bottom,
+    rgba(207, 223, 249, 1),
+    rgba(79, 130, 211, 1)
+  );
 }
 
 .home-wrapper-images {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.home-phone-image {
+  display: none;
 }
 
 @media screen and (min-width: 1200px) {
@@ -84,5 +93,37 @@
     font-size: 52px;
     line-height: 1.15;
     padding: 10px 21px;
+  }
+
+  .home-phone-image {
+    display: inline;
+    height: 400px;
+    margin-top: auto;
+    transform: translateX(-80px) translateY(-10px);
+  }
+
+  .image-block {
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+
+  .googlePlay-button {
+    width: 195px;
+    height: 60px;
+  }
+
+  .home-wrapper-images {
+    margin-left: auto;
+    right: 0;
+  }
+
+  .home-image-people {
+    height: 411px;
+    width: 621xp;
+  }
+
+  .home-title {
+    margin-top: 40px;
   }
 }
