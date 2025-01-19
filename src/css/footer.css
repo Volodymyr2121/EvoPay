@@ -114,19 +114,21 @@
   .footer-gradient {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 122px;
   }
 
   .google-play-2 {
     display: block;
-    min-width: 195px;
+    max-width: 195px;
     margin: 149px 0 79px 112px;
   }
 
   .footer-description {
     font-size: 32px;
     text-align: left;
-    min-width: 684px;
-    padding: 128px 112px 64px 0;
+    max-width: 684px;
+    padding: 128px 0 64px 0;
+    margin: 0;
   }
 }
