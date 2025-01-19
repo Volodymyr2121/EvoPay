@@ -2,6 +2,11 @@
   --lexend: 'Lexend', sans-serif;
   --lilita: 'Lilita One', sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--lexend);
   font-weight: 400;
@@ -45,6 +50,11 @@ ul {
   padding: 0;
   list-style: none;
 }
+
+li {
+  list-style: none;
+}
+
 a {
   color: currentColor;
   text-decoration: none;
@@ -65,7 +75,7 @@ img {
   height: auto;
 }
 .container {
-  max-width: 1199px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -82,10 +92,11 @@ img {
   height: 32px;
   width: 100%;
   transform: translateY(50%);
+  z-index: 100;
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 100%;
     padding: 0 80px;
   }
 }
