@@ -13,7 +13,15 @@
     <title>Privacy Policy</title>
   </head>
   <body class="privacy">
-    <a href="./index.html">Back to Home</a>
+    <nav class="privacy-nav">
+      <div class="back-div">
+        <img class="back-arrow" src="img/privacy/arrow.png" alt="" />
+        <a class="back-link" href="./index.html">Back to Home</a>
+      </div>
+      <button class="privacy-burger">
+        <img src="img/privacy/privacy-burger.png" alt="menu-icon" />
+      </button>
+    </nav>
     <h1 class="privacy-main-title">Privacy Policy</h1>
     <section class="privacy-section">
       <div class="privacy-container">
@@ -182,9 +190,25 @@
             amended by us.
           </p>
         </div>
+        <nav class="mobile-nav hidden">
+          <button class="close-menu-but">
+            <img src="img/close-modal.png" alt="" />
+          </button>
+          <ul class="menu-mobile">
+            <li><a href="#">About the Game</a></li>
+            <li><a href="#advantages">Advantages</a></li>
+            <li><a href="#">How to Play</a></li>
+            <li><a href="#">Why Us</a></li>
+            <li><a href="#">User Reviews</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Our Uniqueness</a></li>
+          </ul>
+          <img class="cat-img" src="img/mobile-cat.png" alt="cat" />
+        </nav>
       </div>
       <img class="privacy-bottom-frame" src="img/bottom-frame.png" alt="" />
     </section>
     <load src="partials/footer.html" />
+    <script type="module" src="js/privacy.js"></script>
   </body>
 </html>
