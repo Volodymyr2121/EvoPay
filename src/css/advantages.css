@@ -23,13 +23,13 @@
   position: relative;
 }
 
-/* .advantages-title {
+.advantages-title {
   position: absolute;
   transform: translateY(66px);
-} */
+}
 
 .advantages-list {
-  margin-top: 48px;
+  margin-top: 163px;
   display: flex;
   flex-direction: column;
   gap: 46px;
@@ -111,6 +111,8 @@
 
 @media screen and (min-width: 1200px) {
   .img-title {
+    width: 640px;
+    height: 130px;
     margin-top: 86px;
   }
 
@@ -152,7 +154,7 @@
   }
 
   .advantages-list {
-    margin-top: 86px;
+    margin-top: 308px;
     margin-bottom: 87px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -201,24 +203,24 @@
   }
   .adv-people-img:nth-child(1) {
     height: 116px;
-    top: 128px;
+    top: 138px;
     left: 18%;
   }
   .adv-people-img:nth-child(2) {
     height: 240px;
-    top: 825px;
+    top: 832px;
     right: 17%;
   }
 
   .adv-people-img:nth-child(3) {
     height: 240px;
-    top: 825px;
+    top: 832px;
     left: 20%;
   }
 
   .adv-people-img:nth-child(4) {
     height: 116px;
-    top: 128px;
+    top: 138px;
     right: 18%;
   }
 
