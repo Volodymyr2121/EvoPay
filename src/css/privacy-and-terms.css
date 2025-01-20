@@ -1,0 +1,204 @@
+.privacy {
+  background: linear-gradient(
+    180deg,
+    rgb(207, 223, 249),
+    rgb(171, 196, 236) 41.147%,
+    rgb(207, 223, 249) 82.294%
+  );
+}
+
+.privacy-section {
+  margin: 0 16px 0;
+  padding: 16px 16px 40px;
+  position: relative;
+}
+
+.privacy-container {
+  max-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.privacy-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.back-arrow {
+  width: 12px;
+  height: 12px;
+  padding: 4px 8px 8px 4px;
+}
+
+.back-link {
+  color: rgb(80, 52, 9);
+  font-family: Lexend;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  padding-bottom: 3px;
+}
+
+.privacy-main-title {
+  color: rgb(250, 250, 250);
+  font-family: Lilita One;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
+  text-shadow: 1px 2px 4px rgb(42, 125, 180);
+  background-image: url('../img/privacy/privacy-title.png');
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+  background-position: center;
+  padding: 10px 57px 14px;
+  margin: 16px auto 20px;
+  max-width: 142px;
+}
+
+.terms-main-title {
+  color: rgb(250, 250, 250);
+  font-family: Lilita One;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
+  text-shadow: 1px 2px 4px rgb(42, 125, 180);
+  background-image: url('../img/privacy/privacy-title.png');
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+  background-position: center;
+  padding: 10px 31px 14px;
+  margin: 16px auto 20px;
+  max-width: 194px;
+}
+
+.privacy-subsection:not(:last-child) {
+  margin-top: 0;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+ul.privacy-text li,
+ul.big-privacy-text li {
+  list-style-type: disc;
+  margin-left: 22px;
+}
+
+.privacy-title {
+  color: rgb(80, 52, 9);
+  font-family: Lilita One;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 16px;
+}
+
+.privacy-text {
+  color: rgb(80, 52, 9);
+  font-family: Lexend;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.privacy-list {
+  color: rgb(4, 78, 216);
+  text-decoration: underline;
+  font-family: Lexend;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.privacy-links::marker {
+  color: rgb(80, 52, 9);
+  list-style-position: inside;
+}
+
+.big-privacy-text {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.privacy-bottom-frame {
+  height: 32px;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.grass-div {
+  position: relative;
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 1200px) {
+  .privacy-section {
+    margin: 64px 80px 0;
+    padding-bottom: 90px;
+  }
+
+  .privacy-container {
+    max-width: 1200px;
+  }
+
+  .privacy-nav {
+    gap: 12px;
+  }
+
+  .back-arrow {
+    width: 16px;
+    height: 16px;
+    padding: 4px;
+  }
+
+  .back-link {
+    font-size: 14px;
+    padding-bottom: 0;
+  }
+
+  .privacy-main-title {
+    font-size: 40px;
+    padding: 42px 200px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    max-width: 257px;
+  }
+
+  .terms-main-title {
+    font-size: 40px;
+    padding: 42px 155px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    max-width: 352px;
+  }
+
+  ul.privacy-text,
+  ul.big-privacy-text {
+    margin-left: 6px;
+  }
+
+  .privacy-title {
+    font-size: 24px;
+  }
+
+  .privacy-text,
+  .privacy-list {
+    font-size: 18px;
+  }
+
+  .big-privacy-text {
+    margin-bottom: 28px;
+  }
+
+  .privacy-bottom-frame {
+    height: 60px;
+  }
+}
