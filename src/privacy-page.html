@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,20 +14,15 @@
     <title>Privacy Policy</title>
   </head>
   <body class="privacy">
-    <nav class="privacy-nav">
-      <div class="back-div">
-        <a href="./index.html"
-          ><img class="back-arrow" src="img/privacy/arrow.png" alt=""
-        /></a>
-        <a class="back-link" href="./index.html">Back to Home</a>
-      </div>
-      <button class="privacy-burger">
-        <img src="img/privacy/privacy-burger.png" alt="menu-icon" />
-      </button>
-    </nav>
-    <h1 class="privacy-main-title">Privacy Policy</h1>
-    <section class="privacy-section">
-      <div class="privacy-container">
+    <div class="privacy-container">
+      <section class="privacy-section">
+        <nav class="privacy-nav">
+          <a href="./index.html"
+            ><img class="back-arrow" src="img/privacy/arrow.png" alt=""
+          /></a>
+          <a class="back-link" href="./index.html">Back to Home</a>
+        </nav>
+        <h1 class="privacy-main-title">Privacy Policy</h1>
         <div class="privacy-subsection">
           <p class="privacy-text">
             This privacy policy applies to the Fluffy Town: Boom Story app
@@ -192,25 +188,11 @@
             amended by us.
           </p>
         </div>
-        <nav class="mobile-nav hidden">
-          <button class="close-menu-but">
-            <img src="img/close-modal.png" alt="" />
-          </button>
-          <ul class="menu-mobile">
-            <li><a href="#">About the Game</a></li>
-            <li><a href="#advantages">Advantages</a></li>
-            <li><a href="#">How to Play</a></li>
-            <li><a href="#">Why Us</a></li>
-            <li><a href="#">User Reviews</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Our Uniqueness</a></li>
-          </ul>
-          <img class="cat-img" src="img/mobile-cat.png" alt="cat" />
-        </nav>
-      </div>
+      </section>
+    </div>
+    <div class="grass-div">
       <img class="privacy-bottom-frame" src="img/bottom-frame.png" alt="" />
-    </section>
+    </div>
     <load src="partials/footer.html" />
-    <script type="module" src="js/privacy.js"></script>
   </body>
 </html>
