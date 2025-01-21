@@ -177,7 +177,7 @@
   }
 
   .how-play-item:nth-child(even) .how-play-item-img {
-    order: -1; /* Зображення перед текстом */
+    order: -1;
     margin-right: auto;
     margin-left: 0;
   }
