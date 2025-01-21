@@ -5,7 +5,7 @@
     rgb(79, 130, 211) 47.796%
   );
   text-align: center;
-  padding: 56px 16px 10px;
+  padding: 56px 16px 132px;
 }
 
 .unique-container {
@@ -31,37 +31,41 @@
   text-shadow: 1px 2px 4px rgb(42, 125, 180);
   background-image: url('../img/title-flag.png');
   background-repeat: no-repeat;
-  background-size: 100% 90%;
+  background-size: 95% 90%;
   background-position: center;
   padding: 10px 68px 13px;
-  margin: 0 auto;
-  max-width: 152px;
+  width: 152px;
+  white-space: nowrap;
+  position: absolute;
+  transform: translateY(-45%);
 }
 
 .unique-cat-and-toys {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
+  position: relative;
+  width: 244px;
+  height: 53px;
+  margin-top: 30px;
 }
 
 .unique-cute-cat {
-  width: 52px;
-  height: 62px;
-  margin-left: 15px;
-  margin-right: 11px;
+  width: 3.25rem;
+  position: absolute;
+  transform: translateX(23%);
+  z-index: 1;
 }
 
 .unique-yarn {
-  width: 24px;
-  height: 24px;
-  margin-left: 0;
-  margin-right: 85px;
+  width: 1.5rem;
+  position: absolute;
+  transform: translate(325%, 130%);
+  z-index: 1;
 }
 
 .unique-toy {
-  width: 42px;
-  height: 56px;
-  margin-left: 0;
+  width: 2.63rem;
+  position: absolute;
+  transform: translate(460%, 7%);
+  z-index: 1;
 }
 
 .unique-list {
@@ -75,11 +79,16 @@
   box-shadow: inset 0px 2px 4px 0px rgba(167, 122, 52, 0.5),
     inset 0px -8px 14px 0px rgba(139, 99, 36, 0.7);
   background: rgb(243, 226, 198);
+  position: relative;
 }
 
-/* .unique-li-container {
-  max-width: 213px;
-} */
+.unique-list-item:nth-child(odd) {
+  padding: 7px 24px;
+}
+
+.unique-list-item:nth-child(even) {
+  padding: 19px 17px;
+}
 
 .unique-title {
   color: rgb(80, 52, 9);
@@ -88,6 +97,7 @@
   font-weight: 400;
   line-height: 150%;
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .unique-text {
@@ -97,4 +107,33 @@
   font-weight: 400;
   line-height: 150%;
   text-align: center;
+  margin-top: 0;
+}
+
+.unique-left-paw {
+  width: 3.75rem;
+  position: absolute;
+  transform: translate(-75%, -55%);
+  z-index: 1;
+}
+
+.unique-right-paw-bottom {
+  width: 3.75rem;
+  position: absolute;
+  transform: translate(290%, -35%);
+  z-index: 1;
+}
+
+.unique-right-paw-top {
+  width: 3.75rem;
+  position: absolute;
+  transform: translate(302%, -58%);
+  z-index: 1;
+}
+
+.unique-people-trees {
+  width: 20rem;
+  position: absolute;
+  transform: translate(0, -107%);
+  z-index: 1;
 }
