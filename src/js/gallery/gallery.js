@@ -1,5 +1,6 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
+
 // const swiper = new Swiper('.gallery-swiper-mobile', {
 //   slidesPerView: 1,
 //   autoplay: {
@@ -11,7 +12,9 @@ import 'swiper/css/bundle';
 //     clickable: 'true',
 //   },
 // });
+
 const bullets = document.querySelectorAll('.custom-bullet');
+
 const swiper = new Swiper('.gallery-swiper-mobile', {
   slidesPerView: 1,
   loop: true,
@@ -21,6 +24,7 @@ const swiper = new Swiper('.gallery-swiper-mobile', {
     },
   },
 });
+
 function updatePagination(activeIndex) {
   bullets.forEach((bullet, index) => {
     if (index === activeIndex) {
@@ -30,6 +34,7 @@ function updatePagination(activeIndex) {
     }
   });
 }
+
 // const swiperDesktop = new Swiper('.swiper', {
 //   loop: true,
 //   slidesPerView: 1,
