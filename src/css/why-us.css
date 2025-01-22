@@ -1,0 +1,234 @@
+.why-us {
+  background: radial-gradient(
+    53% 53% at 50% 47%,
+    rgb(255, 245, 219),
+    rgb(209, 185, 148) 67%,
+    rgb(190, 162, 118) 100%
+  );
+  padding: 56px 16px 204px;
+}
+.why-us-container {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.why-us-main-title {
+  color: rgb(250, 250, 250);
+  font-family: Lilita One;
+  font-size: 20.5px;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
+  text-shadow: 1px 2px 4px rgb(42, 125, 180);
+  background-image: url('../img/title-flag.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 10px 19px 13px;
+  width: 249px;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+.why-us-main-title-2 {
+  display: none;
+}
+.why-us-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 288px;
+  margin-top: 0;
+}
+.why-us-li {
+  max-width: 244px;
+  padding: 32px 12px 33px;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: inset 0px 2px 4px 0px rgba(167, 122, 52, 0.5),
+    inset 0px -8px 14px 0px rgba(139, 99, 36, 0.7);
+  background: rgb(243, 226, 198);
+}
+.why-us-li:nth-child(odd) {
+  margin-left: 44px;
+}
+.why-us-li:nth-child(even) {
+  margin-right: 44px;
+}
+.why-us-li-1 {
+  padding-top: 46px;
+  padding-bottom: 46px;
+}
+.why-us-image {
+  position: absolute;
+  z-index: 1;
+}
+.blue-star {
+  width: 80px;
+  height: 80px;
+  top: 0;
+  left: -48px;
+}
+.gift-box {
+  width: 80px;
+  height: 80px;
+  top: 0;
+  left: 214px;
+}
+.why-us-paw {
+  width: 74px;
+  height: 74px;
+  top: -2px;
+  left: -44px;
+}
+.key {
+  width: 90px;
+  height: 90px;
+  top: 0;
+  left: 0;
+}
+.flower-pot {
+  width: 60px;
+  height: 80px;
+  top: 0;
+  left: -36px;
+}
+.why-us-text {
+  color: rgb(80, 52, 9);
+  font-family: Lilita One;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
+  max-width: 220px;
+}
+/* .why-us-text-4 {
+  letter-spacing: -0.01rem;
+} */
+.why-us-girls {
+  position: relative;
+  max-width: 235px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mic-girl {
+  width: 130px;
+  top: -192px;
+  left: -4px;
+  position: absolute;
+  z-index: 1;
+}
+.cat-girl {
+  width: 106px;
+  top: -192px;
+  left: 136px;
+  position: absolute;
+  z-index: 1;
+}
+/* Desktop Styles */
+@media screen and (min-width: 1200px) {
+  .why-us {
+    background: radial-gradient(
+      53% 53% at 50% 47%,
+      rgb(255, 245, 219) 35.829%,
+      rgb(209, 185, 148) 65.145%,
+      rgb(190, 162, 118) 100%
+    );
+    padding: 86px 88px;
+  }
+  .why-us-container {
+    max-width: 1200px;
+  }
+  .why-us-main-title {
+    display: none;
+  }
+  .why-us-main-title-2 {
+    display: inline-block;
+    color: rgb(250, 250, 250);
+    font-family: Lilita One;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 46px;
+    text-align: center;
+    text-shadow: 1px 2px 4px rgb(42, 125, 180);
+    background-image: url('../img/title-flag.png');
+    background-repeat: no-repeat;
+    background-size: 90% 95%;
+    background-position: center;
+    padding: 42px 254px;
+    width: 131px;
+    white-space: nowrap;
+    margin-bottom: 56px;
+  }
+  .why-us-list {
+    flex-direction: row;
+    gap: 32px;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    justify-content: center;
+  }
+  .why-us-li {
+    border-radius: 24px;
+    width: 320px;
+    padding-top: 90px;
+  }
+  .why-us-li-1 {
+    padding-top: 90px;
+    padding-bottom: 0;
+  }
+  .why-us-li:nth-child(odd) {
+    margin-left: 0;
+  }
+  .why-us-li:nth-child(even) {
+    margin-right: 0;
+  }
+  /* .blue-star {
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: -48px;
+  }
+  .gift-box {
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 214px;
+  }
+  .why-us-paw {
+    width: 74px;
+    height: 74px;
+    top: -2px;
+    left: -44px;
+  }
+  .key {
+    width: 90px;
+    height: 90px;
+    top: 0;
+    left: 0;
+  }
+  .flower-pot {
+    width: 60px;
+    height: 80px;
+    top: 0;
+    left: -36px;
+  } */
+  .why-us-text {
+    font-size: 24px;
+    text-align: right;
+  }
+  .why-us-girls {
+    max-width: 1200px;
+  }
+  .mic-girl {
+    width: 240px;
+    top: -333px;
+    /* left: -4px; */
+  }
+  .cat-girl {
+    width: 202px;
+    top: -342px;
+    /* left: -4px; */
+  }
+}
