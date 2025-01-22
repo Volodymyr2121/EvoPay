@@ -162,7 +162,6 @@
   .why-us-container {
     max-width: 1200px;
   }
-
   .why-us-main-title {
     display: none;
   }
@@ -208,7 +207,6 @@
   .why-us-li:nth-child(odd) {
     margin-left: 0;
   }
-
   .why-us-li:nth-child(even) {
     margin-right: 0;
   }
