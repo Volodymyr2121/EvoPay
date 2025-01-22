@@ -3,4 +3,4 @@ function Ue(s){return s!==null&&typeof s=="object"&&"constructor"in s&&s.constru
         rotateZ(${u.rotate?n?-z:z:0}deg)
         scale(${A})
       `;if(u.slideShadows){let x=o.querySelector(".swiper-slide-shadow");x||(x=fe("cards",o)),x&&(x.style.opacity=Math.min(Math.max((Math.abs(v)-.5)/.5,0),1))}o.style.zIndex=-Math.abs(Math.round(l))+c.length;const S=xe(u,o);S.style.transform=C}},setTransition:c=>{const d=e.slides.map(n=>ce(n));d.forEach(n=>{n.style.transitionDuration=`${c}ms`,n.querySelectorAll(".swiper-slide-shadow").forEach(u=>{u.style.transitionDuration=`${c}ms`})}),Ae({swiper:e,duration:c,transformElements:d})},perspective:()=>!0,overwriteParams:()=>({watchSlidesProgress:!0,virtualTranslate:!e.params.cssMode})})}const Js=[Ms,Cs,Ps,Ls,Is,zs,As,$s,Os,Ds,ks,Hs,Gs,Bs,Xs,Ys,qs,_s,js,Us,Ks,Zs,Qs];Z.use(Js);export{Z as S};
-//# sourceMappingURL=vendor-356eb987.js.map
+//# sourceMappingURL=vendor-c8b3e011.js.map
