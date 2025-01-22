@@ -30,7 +30,7 @@
 }
 
 .game-title-wrapper {
-  max-width: 746px;
+  width: 288px;
   height: 112px;
   margin-top: 34px;
   display: flex;
@@ -48,6 +48,7 @@
 }
 
 .home-title {
+  width: 288px;
   font-family: var(--lilita);
   font-size: 22px;
   color: rgba(42, 109, 173, 1);
@@ -85,6 +86,7 @@
 
 @media screen and (min-width: 1200px) {
   .game-title-wrapper {
+    width: 746px;
     height: 84px;
     margin-top: 76px;
   }
@@ -124,6 +126,7 @@
   }
 
   .home-title {
+    width: 746px;
     margin-top: 40px;
   }
 }
