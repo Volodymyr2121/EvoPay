@@ -1,5 +1,3 @@
-// ./js/about/about.js
-
 export function initializeAboutSlider() {
   const slides = document.querySelectorAll('.slider-content');
   const indicators = document.querySelectorAll('.indicator');
