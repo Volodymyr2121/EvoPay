@@ -172,9 +172,11 @@
 
   .bubble-star {
     display: block;
-    width: 1055px;
+    max-width: 1055px;
     height: 91px;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .left-star {
@@ -182,7 +184,7 @@
     height: 65px;
     position: absolute;
     top: -7px;
-    left: 138px;
+    left: 0;
     z-index: 1;
   }
 
@@ -191,7 +193,7 @@
     height: 52px;
     position: absolute;
     top: -32px;
-    left: 191px;
+    left: 53px;
     z-index: 1;
   }
 
@@ -200,7 +202,7 @@
     height: 75px;
     position: absolute;
     top: -26px;
-    left: 207px;
+    left: 69px;
     z-index: 1;
   }
 
@@ -209,7 +211,7 @@
     height: 65px;
     position: absolute;
     top: -25px;
-    left: 1066px;
+    left: 928px;
     z-index: 1;
   }
 
@@ -218,7 +220,7 @@
     height: 37px;
     position: absolute;
     top: -40px;
-    left: 1154px;
+    left: 1016px;
     z-index: 1;
   }
 
@@ -227,7 +229,7 @@
     height: 65px;
     position: absolute;
     top: -22px;
-    left: 1131px;
+    left: 993px;
     z-index: 1;
   }
 
@@ -330,20 +332,21 @@
   .unique-text {
     font-size: 18px;
     max-width: 380px;
+    letter-spacing: -0.01em;
   }
 
   .unique-left-paw {
     width: 80px;
     position: absolute;
     top: 2px;
-    left: 445px;
+    left: 433px;
     z-index: 1;
   }
 
   .unique-right-paw-bottom {
     width: 80px;
     position: absolute;
-    top: 102px;
+    top: 112px;
     left: -275px;
     z-index: 1;
   }
@@ -351,7 +354,7 @@
   .unique-right-paw-top {
     width: 80px;
     position: absolute;
-    top: 135px;
+    top: 144px;
     left: -284px;
     z-index: 1;
   }
