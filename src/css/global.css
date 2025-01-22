@@ -102,15 +102,16 @@ img {
   text-shadow: 1px 2px 4px 0px rgba(42, 125, 180, 1);
   position: absolute;
   transform: translateY(66px);
+  z-index: 2;
 }
 
 .img-title {
   width: 288px;
+  z-index: 2;
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 100%;
     padding: 0 80px;
   }
 
