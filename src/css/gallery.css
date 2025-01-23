@@ -144,10 +144,17 @@
     overflow: visible;
   }
 
+  .gallery-list-wrapper ul {
+    transition: transform 0.3s ease-out;
+  }
+
+  .gallery-image-active {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
   .img-gallery {
     width: 676px;
-    margin-left: 0;
-    margin-right: 0;
   }
 
   .gallery-nav {
