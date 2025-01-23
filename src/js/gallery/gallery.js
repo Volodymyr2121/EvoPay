@@ -1,45 +1,31 @@
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+export function initializeGallerySlider() {
+  const galleryList = document.querySelector('.gallery-list-wrapper ul');
+  const indicators = document.querySelectorAll('.indicatorr');
+  const prevButton = document.querySelector('.prevv');
+  const nextButton = document.querySelector('.nextt');
+  let currentIndex = 4;
 
-// const swiper = new Swiper('.gallery-swiper-mobile', {
-//   slidesPerView: 1,
-//   autoplay: {
-//     delay: 2000,
-//   },
-//   pagination: {
-//     el: '.swiper-pagination',
-//     type: 'bullets',
-//     clickable: 'true',
-//   },
-// });
+  const updateSlider = index => {
+    galleryList.style.transform = `translateX(-${index * 100}%)`; // Переміщення списку
+    indicators.forEach((indicator, i) => {
+      indicator.classList.toggle('active', i === index); // Активний індикатор
+    });
+  };
 
-const bullets = document.querySelectorAll('.custom-bullet');
+  nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % indicators.length;
+    updateSlider(currentIndex);
+  });
 
-const swiper = new Swiper('.gallery-swiper-mobile', {
-  slidesPerView: 1,
-  loop: true,
-  on: {
-    slideChange: function () {
-      updatePagination(swiper.realIndex); // Real index accounts for looping
-    },
-  },
-});
+  prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + indicators.length) % indicators.length;
+    updateSlider(currentIndex);
+  });
 
-function updatePagination(activeIndex) {
-  bullets.forEach((bullet, index) => {
-    if (index === activeIndex) {
-      bullet.classList.add('active');
-    } else {
-      bullet.classList.remove('active');
-    }
+  indicators.forEach((indicator, index) => {
+    indicator.addEventListener('click', () => {
+      currentIndex = index;
+      updateSlider(currentIndex);
+    });
   });
 }
-
-// const swiperDesktop = new Swiper('.swiper', {
-//   loop: true,
-//   slidesPerView: 1,
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-// });
