@@ -5,6 +5,8 @@ export function initializeAboutSlider() {
   const nextButton = document.querySelector('.next');
 
   let currentSlide = 1;
+  let startX = 0;
+  let endX = 0;
 
   function showSlide(index) {
     slides.forEach(slide => {
@@ -35,4 +37,31 @@ export function initializeAboutSlider() {
       showSlide(currentSlide);
     });
   });
+
+  document
+    .querySelector('.gallery-wrapper')
+    .addEventListener('touchstart', function (e) {
+      startX = e.touches[0].clientX;
+    });
+
+  document
+    .querySelector('.gallery-wrapper')
+    .addEventListener('touchmove', function (e) {
+      endX = e.touches[0].clientX;
+    });
+
+  document
+    .querySelector('.gallery-wrapper')
+    .addEventListener('touchend', function () {
+      if (startX > endX + 50) {
+        // Свайп ліворуч
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }
+      if (startX < endX - 50) {
+        // Свайп праворуч
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+      }
+    });
 }

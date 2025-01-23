@@ -4,7 +4,10 @@ export function initializeGallerySlider() {
   const prevButtons = document.querySelectorAll('.prevv');
   const nextButtons = document.querySelectorAll('.nextt');
   const galleryItems = document.querySelectorAll('.gallery-li');
+
   let currentIndex = 4;
+  let startX = 0;
+  let endX = 0;
 
   const updateSlider = index => {
     galleryList.style.transform = `translateX(-${index * 100}%)`;
@@ -36,6 +39,32 @@ export function initializeGallerySlider() {
       updateSlider(currentIndex);
     });
   });
+
+  document
+    .querySelector('.gallery-container')
+    .addEventListener('touchstart', function (e) {
+      startX = e.touches[0].clientX;
+    });
+
+  document
+    .querySelector('.gallery-container')
+    .addEventListener('touchmove', function (e) {
+      endX = e.touches[0].clientX;
+    });
+
+  document
+    .querySelector('.gallery-container')
+    .addEventListener('touchend', function () {
+      if (startX > endX + 50) {
+        currentIndex = (currentIndex + 1) % indicators.length;
+        updateSlider(currentIndex);
+      }
+      if (startX < endX - 50) {
+        currentIndex =
+          (currentIndex - 1 + indicators.length) % indicators.length;
+        updateSlider(currentIndex);
+      }
+    });
 
   updateSlider(currentIndex);
 }
