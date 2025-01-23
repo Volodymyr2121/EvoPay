@@ -1,3 +1,4 @@
+import './js/reviews/reviews.js';
 import { initializeAboutSlider } from './js/about/about.js';
 import { initializeGallerySlider } from './js/gallery/gallery.js';
 

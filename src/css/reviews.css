@@ -41,14 +41,24 @@
   margin-bottom: 0;
 }
 
+.swiper {
+  width: 236px;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .reviews-list {
   display: flex;
   transition: transform 0.3s ease-in-out;
-  /* width: 227px;
-  overflow: hidden; */
-  margin-top: 20px;
+  margin-top: 32px;
   margin-bottom: 0;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 16px;
 }
 
 .reviews-li {
@@ -134,4 +144,113 @@
   top: -260px;
   left: 1px;
   z-index: 1;
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 1200px) {
+  .reviews-section {
+    background: linear-gradient(
+      180deg,
+      rgb(207, 223, 249),
+      rgb(79, 130, 211) 82.294%
+    );
+    padding: 86px 80px;
+  }
+
+  .reviews-container {
+    max-width: 1200px;
+    border-radius: 80px;
+    box-shadow: inset 0px -6px 40px 0px rgba(180, 147, 95, 0.7),
+      inset 0px 2px 40px 0px rgba(180, 147, 95, 0.7);
+    height: 632px;
+  }
+
+  .reviews-main-title {
+    font-size: 40px;
+    background-size: 95% 90%;
+    padding: 36px 205px 48px 206px;
+    width: 229px;
+    transform: translateY(-43%);
+  }
+
+  .reviews-list {
+    margin-top: 32px;
+    width: 1040px;
+    display: block;
+    position: relative;
+  }
+
+  .reviews-li {
+    max-width: 325px;
+    gap: 16px;
+    box-sizing: border-box;
+  }
+
+  .rev-1,
+  .rev-2,
+  .rev-3,
+  .rev-4,
+  .rev-5 {
+    background-size: 100% 95%;
+  }
+
+  .rev-1 {
+    padding: 52px 30px 52px 30px;
+    position: absolute;
+    top: 305px;
+    left: 698px;
+  }
+
+  .rev-2 {
+    padding: 52px 31px 52px 30px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .rev-3 {
+    padding: 32px 31px 51px 30px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .rev-4 {
+    padding: 32px 31px 51px 35px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .rev-5 {
+    padding: 51px 30px 32px 31px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .reviews-image {
+    width: 66px;
+  }
+
+  .reviews-title {
+    font-size: 18px;
+  }
+
+  .reviews-text {
+    font-size: 14px;
+    max-width: 183px;
+  }
+
+  .reviews-cat-div {
+    max-width: 315px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .reviews-cat {
+    width: 313px;
+    height: 265px;
+    top: -576px;
+  }
 }
