@@ -183,7 +183,7 @@
     width: 65px;
     height: 65px;
     position: absolute;
-    top: -7px;
+    top: 6px;
     left: 0;
     z-index: 1;
   }
@@ -192,7 +192,7 @@
     width: 52px;
     height: 52px;
     position: absolute;
-    top: -32px;
+    top: -19px;
     left: 53px;
     z-index: 1;
   }
@@ -201,7 +201,7 @@
     width: 75px;
     height: 75px;
     position: absolute;
-    top: -26px;
+    top: -13px;
     left: 69px;
     z-index: 1;
   }
@@ -210,7 +210,7 @@
     width: 65px;
     height: 65px;
     position: absolute;
-    top: -25px;
+    top: -12px;
     left: 928px;
     z-index: 1;
   }
@@ -219,7 +219,7 @@
     width: 37px;
     height: 37px;
     position: absolute;
-    top: -40px;
+    top: -27px;
     left: 1016px;
     z-index: 1;
   }
@@ -228,7 +228,7 @@
     width: 65px;
     height: 65px;
     position: absolute;
-    top: -22px;
+    top: -9px;
     left: 993px;
     z-index: 1;
   }
