@@ -6,9 +6,9 @@ export function initializeGallerySlider() {
   let currentIndex = 4;
 
   const updateSlider = index => {
-    galleryList.style.transform = `translateX(-${index * 100}%)`; // Переміщення списку
+    galleryList.style.transform = `translateX(-${index * 100}%)`;
     indicators.forEach((indicator, i) => {
-      indicator.classList.toggle('active', i === index); // Активний індикатор
+      indicator.classList.toggle('gallery-active', i === index);
     });
   };
 
@@ -28,4 +28,6 @@ export function initializeGallerySlider() {
       updateSlider(currentIndex);
     });
   });
+
+  updateSlider(currentIndex);
 }
