@@ -144,6 +144,10 @@
     overflow: visible;
   }
 
+  .extra-gallery-wrapper {
+    transform: translateX(-38px);
+  }
+
   .gallery-list-wrapper ul {
     transition: transform 0.3s ease-out;
   }

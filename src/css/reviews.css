@@ -41,7 +41,7 @@
   margin-bottom: 0;
 }
 
-.swiper {
+.swiper-user-reviews {
   width: 236px;
   overflow: hidden;
 }
@@ -55,10 +55,13 @@
 .reviews-list {
   display: flex;
   transition: transform 0.3s ease-in-out;
-  margin-top: 32px;
+  margin-top: 40px;
   margin-bottom: 0;
   flex-direction: row;
-  gap: 16px;
+}
+
+.no-reviews-swiper {
+  display: none;
 }
 
 .reviews-li {
@@ -71,7 +74,7 @@
 .rev-1 {
   background-image: url('../img/user-reviews/review-1-pic.png');
   background-repeat: no-repeat;
-  background-size: 95% 90%;
+  background-size: 98% 90%;
   background-position: center;
   padding: 28px 15px 16px 21px;
 }
@@ -79,25 +82,25 @@
 .rev-2 {
   background-image: url('../img/user-reviews/review-1-pic.png');
   background-repeat: no-repeat;
-  background-size: 95% 90%;
+  background-size: 98% 90%;
   background-position: center;
-  padding: 36px 23px 21px 28px;
+  padding: 36px 23px 21px 25px;
 }
 
 .rev-3 {
   background-image: url('../img/user-reviews/review-3-pic.png');
   background-repeat: no-repeat;
-  background-size: 95% 90%;
+  background-size: 98% 90%;
   background-position: center;
-  padding: 14px 18px 30px 17px;
+  padding: 14px 9px 30px 12px;
 }
 
 .rev-4 {
   background-image: url('../img/user-reviews/review-4-pic.png');
   background-repeat: no-repeat;
-  background-size: 95% 90%;
+  background-size: 98% 90%;
   background-position: center;
-  padding: 18px 11px 28px 21px;
+  padding: 18px 0 28px 17px;
 }
 
 .rev-5 {
@@ -105,11 +108,11 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
-  padding: 22px 24px 12px 20px;
+  padding: 22px 19px 12px 20px;
 }
 
 .reviews-image {
-  width: 40px;
+  width: 36px;
 }
 
 .reviews-title {
@@ -124,10 +127,21 @@
 .reviews-text {
   color: rgb(80, 52, 9);
   font-family: Lexend;
-  font-size: 12px;
+  font-size: 10.5px;
   font-weight: 400;
   line-height: 150%;
   margin-top: 0;
+  letter-spacing: -0.01em;
+}
+
+.rev-1 h2,
+.rev-2 h2 {
+  font-size: 14px;
+  letter-spacing: -0.01em;
+}
+
+.rev-1 p {
+  width: 126px;
 }
 
 .reviews-cat-div {
@@ -135,6 +149,10 @@
   max-width: 240px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.reviews-no-hearts {
+  display: none;
 }
 
 .reviews-cat {
@@ -148,6 +166,30 @@
 
 /* Desktop Styles */
 @media screen and (min-width: 1200px) {
+  .reviews-left-star {
+    top: -21px;
+  }
+
+  .reviews-sb-1 {
+    top: -46px;
+  }
+
+  .reviews-bb-1 {
+    top: -40px;
+  }
+
+  .reviews-right-star {
+    top: -39px;
+  }
+
+  .reviews-sb-2 {
+    top: -54px;
+  }
+
+  .reviews-bb-2 {
+    top: -36px;
+  }
+
   .reviews-section {
     background: linear-gradient(
       180deg,
@@ -158,7 +200,7 @@
   }
 
   .reviews-container {
-    max-width: 1200px;
+    max-width: 1040px;
     border-radius: 80px;
     box-shadow: inset 0px -6px 40px 0px rgba(180, 147, 95, 0.7),
       inset 0px 2px 40px 0px rgba(180, 147, 95, 0.7);
@@ -171,6 +213,14 @@
     padding: 36px 205px 48px 206px;
     width: 229px;
     transform: translateY(-43%);
+  }
+
+  .visible-reviews-swiper {
+    display: none;
+  }
+
+  .no-reviews-swiper {
+    display: block;
   }
 
   .reviews-list {
@@ -197,36 +247,36 @@
   .rev-1 {
     padding: 52px 30px 52px 30px;
     position: absolute;
-    top: 305px;
+    top: 278px;
     left: 698px;
   }
 
   .rev-2 {
     padding: 52px 31px 52px 30px;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 371px;
+    left: 364px;
   }
 
   .rev-3 {
     padding: 32px 31px 51px 30px;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 68px;
+    left: 76px;
   }
 
   .rev-4 {
-    padding: 32px 31px 51px 35px;
+    padding: 32px 26px 51px 35px;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 68px;
+    left: 635px;
   }
 
   .rev-5 {
     padding: 51px 30px 32px 31px;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 278px;
+    left: 17px;
   }
 
   .reviews-image {
@@ -242,7 +292,16 @@
     max-width: 183px;
   }
 
-  .reviews-cat-div {
+  .rev-3 p,
+  .rev-5 p {
+    font-size: 13.6px;
+  }
+
+  .reviews-hearts {
+    display: none;
+  }
+
+  .reviews-no-hearts {
     max-width: 315px;
     display: flex;
     justify-content: center;
