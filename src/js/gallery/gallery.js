@@ -1,8 +1,8 @@
 export function initializeGallerySlider() {
   const galleryList = document.querySelector('.gallery-list-wrapper ul');
   const indicators = document.querySelectorAll('.indicatorr');
-  const prevButton = document.querySelector('.prevv');
-  const nextButton = document.querySelector('.nextt');
+  const prevButtons = document.querySelectorAll('.prevv');
+  const nextButtons = document.querySelectorAll('.nextt');
   let currentIndex = 4;
 
   const updateSlider = index => {
@@ -12,14 +12,18 @@ export function initializeGallerySlider() {
     });
   };
 
-  nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % indicators.length;
-    updateSlider(currentIndex);
+  nextButtons.forEach(nextButton => {
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % indicators.length;
+      updateSlider(currentIndex);
+    });
   });
 
-  prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + indicators.length) % indicators.length;
-    updateSlider(currentIndex);
+  prevButtons.forEach(prevButton => {
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + indicators.length) % indicators.length;
+      updateSlider(currentIndex);
+    });
   });
 
   indicators.forEach((indicator, index) => {
