@@ -99,8 +99,12 @@
 .key {
   width: 90px;
   height: 90px;
-  top: 0;
-  left: 0;
+  top: -5px;
+  left: 203px;
+}
+
+.key-2 {
+  display: none;
 }
 
 .flower-pot {
@@ -118,11 +122,8 @@
   line-height: 150%;
   text-align: center;
   max-width: 220px;
+  letter-spacing: -0.01em;
 }
-
-/* .why-us-text-4 {
-  letter-spacing: -0.01rem;
-} */
 
 .why-us-girls {
   position: relative;
@@ -195,13 +196,31 @@
 
   .why-us-li {
     border-radius: 24px;
-    width: 320px;
-    padding-top: 90px;
+    max-width: 320px;
+    padding: 90px 32px 62px;
+    box-sizing: border-box;
   }
 
   .why-us-li-1 {
-    padding-top: 90px;
-    padding-bottom: 0;
+    padding-left: 65px;
+  }
+
+  .why-us-li-2 {
+    padding-left: 34px;
+  }
+
+  .why-us-li-3 {
+    padding-left: 20px;
+  }
+
+  .why-us-li-4 {
+    padding-left: 0;
+    padding-right: 18px;
+  }
+
+  .why-us-li-5 {
+    padding-left: 28px;
+    padding-right: 20px;
   }
 
   .why-us-li:nth-child(odd) {
@@ -211,44 +230,54 @@
     margin-right: 0;
   }
 
-  /* .blue-star {
-    width: 80px;
-    height: 80px;
-    top: 0;
-    left: -48px;
+  .blue-star {
+    width: 120px;
+    height: 120px;
+    top: 10px;
+    left: 11px;
   }
 
   .gift-box {
-    width: 80px;
-    height: 80px;
-    top: 0;
-    left: 214px;
+    width: 100px;
+    height: 100px;
+    top: 11px;
+    left: 12px;
   }
 
   .why-us-paw {
-    width: 74px;
-    height: 74px;
-    top: -2px;
-    left: -44px;
+    width: 90px;
+    height: 90px;
+    top: 9px;
+    left: 11px;
   }
 
   .key {
-    width: 90px;
-    height: 90px;
-    top: 0;
-    left: 0;
+    display: none;
+  }
+
+  .key-2 {
+    display: block;
+    width: 100px;
+    height: 100px;
+    top: 11px;
+    left: 14px;
   }
 
   .flower-pot {
-    width: 60px;
-    height: 80px;
-    top: 0;
-    left: -36px;
-  } */
+    width: 70px;
+    height: 100px;
+    top: 11px;
+    left: 10px;
+  }
 
   .why-us-text {
     font-size: 24px;
     text-align: right;
+    max-width: none;
+  }
+
+  .why-us-text-1 {
+    max-width: 220px;
   }
 
   .why-us-girls {
@@ -258,12 +287,12 @@
   .mic-girl {
     width: 240px;
     top: -333px;
-    /* left: -4px; */
+    left: 21px;
   }
 
   .cat-girl {
     width: 202px;
     top: -342px;
-    /* left: -4px; */
+    left: 955px;
   }
 }
