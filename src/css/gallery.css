@@ -17,6 +17,20 @@
   align-items: center;
 }
 
+.gallery-main-title {
+  font-family: var(--lilita);
+  font-size: 22px;
+  color: rgba(250, 250, 250, 1);
+  text-shadow: 1px 2px 4px 0px rgba(42, 125, 180, 1);
+  position: absolute;
+  transform: translateY(66px);
+  z-index: 2;
+}
+
+.gallery-main-title-2 {
+  display: none;
+}
+
 .gallery-list-wrapper {
   margin-top: 144px;
   width: 288px;
@@ -39,7 +53,6 @@
 
 .gallery-nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-top: 23px;
 }
@@ -47,6 +60,10 @@
 .slider-but {
   width: 38px;
   padding-top: 3px;
+}
+
+.slider-button-desktop {
+  display: none;
 }
 
 .prevv {
@@ -83,4 +100,90 @@
 
 .nextt {
   margin-left: 12px;
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 1200px) {
+  .gallery-section {
+    padding: 86px 0;
+  }
+
+  .gallery-container {
+    max-width: 1200px;
+    overflow: hidden;
+  }
+
+  .gallery-img-title {
+    display: none;
+  }
+
+  .gallery-main-title {
+    display: none;
+  }
+
+  .gallery-main-title-2 {
+    display: inline-block;
+    color: rgb(250, 250, 250);
+    font-family: Lilita One;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 46px;
+    text-align: center;
+    text-shadow: 1px 2px 4px rgb(42, 125, 180);
+    background-image: url('../img/title-flag.png');
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+    background-position: center;
+    padding: 36px 257px 48px;
+    width: 125px;
+  }
+
+  .gallery-list-wrapper {
+    width: 676px;
+    margin-top: 67px;
+    overflow: visible;
+  }
+
+  .img-gallery {
+    width: 676px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .gallery-nav {
+    margin-top: 56px;
+    justify-content: center;
+  }
+
+  .slider-but {
+    display: none;
+  }
+
+  .slider-button-desktop {
+    display: block;
+    width: 93px;
+    padding-top: 3px;
+  }
+
+  .prevv {
+    margin-right: 24px;
+  }
+
+  .indicatres {
+    gap: 24px;
+  }
+
+  .indicatorr {
+    width: 24px;
+    height: 24px;
+  }
+
+  .gallery-active {
+    width: 64px;
+    height: 64px;
+  }
+
+  .nextt {
+    margin-left: 24px;
+  }
 }
