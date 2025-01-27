@@ -5,7 +5,7 @@
   background-image: url(../img/home/bg_mob.jpeg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 1300px auto;
 }
 
 .game-title {
@@ -98,16 +98,16 @@
   }
 
   .image-container {
-    max-width: 700px;
+    max-width: 690px;
     display: flex;
     margin-top: auto;
-    transform: translateX(-100px) translateY(-10px);
+    transform: translateX(-80px) translateY(-10px);
   }
 
   .home-phone-image {
     display: block;
     height: 400px;
-    max-width: 900px;
+    max-width: 780px;
   }
 
   .image-block {
