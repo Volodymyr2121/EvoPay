@@ -92,7 +92,7 @@
   background-repeat: no-repeat;
   background-size: 98% 90%;
   background-position: center;
-  padding: 14px 9px 30px 12px;
+  padding: 14px 12px 30px 12px;
 }
 
 .rev-4 {
@@ -251,15 +251,25 @@
     left: 698px;
   }
 
+  .rev-1 p {
+    width: 178px;
+  }
+
   .rev-2 {
-    padding: 52px 31px 52px 30px;
+    padding: 52px 33px 52px 30px;
     position: absolute;
     top: 371px;
     left: 364px;
   }
 
+  .rev-1 h2,
+  .rev-2 h2 {
+    font-size: 18px;
+    letter-spacing: 0;
+  }
+
   .rev-3 {
-    padding: 32px 31px 51px 30px;
+    padding: 32px 43px 51px 30px;
     position: absolute;
     top: 68px;
     left: 76px;
@@ -273,7 +283,7 @@
   }
 
   .rev-5 {
-    padding: 51px 30px 32px 31px;
+    padding: 51px 33px 32px 31px;
     position: absolute;
     top: 278px;
     left: 17px;
