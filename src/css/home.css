@@ -97,17 +97,23 @@
     padding: 10px 21px;
   }
 
-  .home-phone-image {
-    display: inline;
-    height: 400px;
+  .image-container {
+    max-width: 700px;
+    display: flex;
     margin-top: auto;
-    transform: translateX(-80px) translateY(-10px);
+    transform: translateX(-100px) translateY(-10px);
+  }
+
+  .home-phone-image {
+    display: block;
+    height: 400px;
+    max-width: 900px;
   }
 
   .image-block {
-    width: 100%;
     display: flex;
-    position: relative;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .googlePlay-button {
@@ -123,6 +129,7 @@
   .home-image-people {
     height: 411px;
     width: 621xp;
+    object-fit: contain;
   }
 
   .home-title {
