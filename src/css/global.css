@@ -99,7 +99,7 @@ img {
   font-family: var(--lilita);
   font-size: 22px;
   color: rgba(250, 250, 250, 1);
-  text-shadow: 1px 2px 4px 0px rgba(42, 125, 180, 1);
+  text-shadow: 1px 2px 4px rgba(42, 125, 180, 1);
   position: absolute;
   transform: translateY(66px);
   z-index: 2;
@@ -117,6 +117,10 @@ img {
 
   .img-title {
     width: 640px;
+  }
+
+  .bottom-frame {
+    height: 60px;
   }
 
   .section-title {

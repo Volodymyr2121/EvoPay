@@ -1,8 +1,13 @@
 .how-to-play-block {
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom,
     rgba(134, 143, 237, 1),
     rgba(105, 188, 255, 1)
+  ); */
+  background: linear-gradient(
+    180deg,
+    rgb(207, 223, 249),
+    rgb(79, 130, 211) 31.072%
   );
 }
 
@@ -22,8 +27,10 @@
   padding: 0 12px;
   width: 288px;
   background-color: rgba(255, 245, 219, 1);
-  box-shadow: 0px -2.39px 15.92px 0px rgba(180, 147, 95, 0.7) inset;
-  box-shadow: 0px 0.8px 15.92px 0px rgba(180, 147, 95, 0.7) inset;
+  /* box-shadow: 0px -2.39px 15.92px 0px rgba(180, 147, 95, 0.7) inset;
+  box-shadow: 0px 0.8px 15.92px 0px rgba(180, 147, 95, 0.7) inset; */
+  box-shadow: inset 0px -2.39px 15.92px 0px rgba(180, 147, 95, 0.7),
+    inset 0px 0.8px 15.92px 0px rgba(180, 147, 95, 0.7);
   border-radius: 24px;
 }
 
@@ -62,6 +69,8 @@
   font-size: 18px;
   color: rgba(80, 52, 9, 1);
   margin-bottom: 8px;
+  font-weight: 400;
+  letter-spacing: 0;
 }
 
 .how-play-item-text {
@@ -94,12 +103,22 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .how-to-play-block {
+    background: linear-gradient(
+      180deg,
+      rgb(207, 223, 249),
+      rgb(79, 130, 211) 82.294%
+    );
+  }
+
   .how-play-list-wrp {
     margin-top: 146px;
     margin-bottom: 86px;
     padding: 0 65px;
     width: 910px;
     border-radius: 80px;
+    box-shadow: inset 0px -6px 40px 0px rgba(180, 147, 95, 0.7),
+      inset 0px 2px 40px 0px rgba(180, 147, 95, 0.7);
   }
 
   .how-play-title {
