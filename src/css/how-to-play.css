@@ -20,15 +20,14 @@
 
 .img-title {
   position: absolute;
+  width: 264px;
 }
 
 .how-play-list-wrp {
   margin-top: 78px;
   padding: 0 12px;
-  width: 288px;
+  width: 264px;
   background-color: rgba(255, 245, 219, 1);
-  /* box-shadow: 0px -2.39px 15.92px 0px rgba(180, 147, 95, 0.7) inset;
-  box-shadow: 0px 0.8px 15.92px 0px rgba(180, 147, 95, 0.7) inset; */
   box-shadow: inset 0px -2.39px 15.92px 0px rgba(180, 147, 95, 0.7),
     inset 0px 0.8px 15.92px 0px rgba(180, 147, 95, 0.7);
   border-radius: 24px;
@@ -58,7 +57,7 @@
   border-radius: 16px;
   width: 230px;
   position: absolute;
-  top: 0px;
+  top: -10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
@@ -91,7 +90,7 @@
   height: 66px;
   position: absolute;
   z-index: 100;
-  top: 310px;
+  top: 224px;
 }
 
 .how-play-item:last-child .list-arrow {
@@ -163,11 +162,11 @@
   }
 
   .list-arrow {
+    content: url('../img/how-to-play/arrow-desk.png');
     width: 180px;
     top: 105px;
     left: 240px;
     height: 100px;
-    transform: rotate(220deg);
   }
 
   .how-play-item:last-child .list-arrow {
@@ -182,7 +181,7 @@
     left: auto;
     right: 240px;
     top: 105px;
-    transform: scaleY(-1) rotate(35deg);
+    transform: scaleY(-1) rotate(180deg);
   }
 
   .how-play-item:nth-child(even) .how-play-item-titel-wrp {
@@ -199,5 +198,10 @@
     order: -1;
     margin-right: auto;
     margin-left: 0;
+  }
+
+  .img-title {
+    position: absolute;
+    width: 630px;
   }
 }

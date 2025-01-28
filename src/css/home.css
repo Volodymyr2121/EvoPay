@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../img/home/bg_mob.jpeg);
+  background-image: url(../img/home/bg_mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1300px auto;
+  background-size: 320px auto;
 }
 
 .game-title {
@@ -85,6 +85,16 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .home-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/home/bg_dsktp.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1300px auto;
+  }
+
   .home {
     padding-bottom: 19px;
   }

@@ -106,11 +106,16 @@ img {
 }
 
 .img-title {
-  width: 288px;
+  width: 264px;
   z-index: 2;
 }
 
 @media screen and (min-width: 1200px) {
+  .img-title {
+    width: 630px;
+    z-index: 2;
+  }
+
   .container {
     padding: 0 80px;
   }

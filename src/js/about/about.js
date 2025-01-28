@@ -3,10 +3,9 @@ export function initializeAboutSlider() {
   const indicators = document.querySelectorAll('.indicator');
   const prevButton = document.querySelector('.prev');
   const nextButton = document.querySelector('.next');
+  const sliderImages = document.querySelectorAll('.slider-image');
 
   let currentSlide = 1;
-  // let startX = 0;
-  // let endX = 0;
 
   function showSlide(index) {
     slides.forEach(slide => {
@@ -17,6 +16,16 @@ export function initializeAboutSlider() {
     });
     slides[index].style.display = 'block';
     indicators[index].classList.add('active');
+
+    if (window.innerWidth >= 1200) {
+      if (index === 0) {
+        sliderImages[index].src = './img/about-the-game/lets-order.jpg';
+      } else if (index === 1) {
+        sliderImages[index].src = './img/about-the-game/welcome-dsk.jpg';
+      } else if (index === 2) {
+        sliderImages[index].src = './img/about-the-game/match.jpg';
+      }
+    }
   }
 
   showSlide(currentSlide);
@@ -37,31 +46,4 @@ export function initializeAboutSlider() {
       showSlide(currentSlide);
     });
   });
-
-  // document
-  //   .querySelector('.gallery-wrapper')
-  //   .addEventListener('touchstart', function (e) {
-  //     startX = e.touches[0].clientX;
-  //   });
-
-  // document
-  //   .querySelector('.gallery-wrapper')
-  //   .addEventListener('touchmove', function (e) {
-  //     endX = e.touches[0].clientX;
-  //   });
-
-  // document
-  //   .querySelector('.gallery-wrapper')
-  //   .addEventListener('touchend', function () {
-  //     if (startX > endX + 50) {
-  //       // Свайп ліворуч
-  //       currentSlide = (currentSlide + 1) % slides.length;
-  //       showSlide(currentSlide);
-  //     }
-  //     if (startX < endX - 50) {
-  //       // Свайп праворуч
-  //       currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-  //       showSlide(currentSlide);
-  //     }
-  //   });
 }
