@@ -19,11 +19,11 @@ export function initializeAboutSlider() {
 
     if (window.innerWidth >= 1200) {
       if (index === 0) {
-        sliderImages[index].src = '../img/about-the-game/lets-order.jpg';
+        sliderImages[index].src = '../../img/about-the-game/lets-order.jpg';
       } else if (index === 1) {
-        sliderImages[index].src = '../img/about-the-game/welcome-dsk.jpg';
+        sliderImages[index].src = '../../img/about-the-game/welcome-dsk.jpg';
       } else if (index === 2) {
-        sliderImages[index].src = '../img/about-the-game/match.jpg';
+        sliderImages[index].src = '../../img/about-the-game/match.jpg';
       }
     }
   }
